@@ -18,14 +18,21 @@
 - 👤 Clients  
 - 📊 Reports  
 
-Built with **PHP (PDO)** and **MySQL**, the system focuses on security, performance, and a clean, user-friendly interface.
+Built with **PHP (PDO)** and **MySQL**, it focuses on security, performance, and user-friendly design.
 
 ---
 
 # 🖼️ Application Screenshots
 
+> 📸 Replace the image links below with your actual screenshots inside a `/screenshots` folder.
+
 ## 🔐 Login Page
 ![Login Screenshot](screenshots/login.png)
+##  Recent page
+![Login Screenshot](screenshots/Recent.png)
+##  Edit page
+![Login Screenshot](screenshots/Edit.png)
+
 
 ## 📊 Dashboard
 ![Dashboard Screenshot](screenshots/dashboard.png)
@@ -39,19 +46,13 @@ Built with **PHP (PDO)** and **MySQL**, the system focuses on security, performa
 ## 🧾 Sales Module
 ![Sales Screenshot](screenshots/sales.png)
 
-## 📝 Recent Activity
-![Recent Screenshot](screenshots/Recent.png)
-
-## ✏️ Edit Page
-![Edit Screenshot](screenshots/Edit.png)
-
 ---
 
 # ✨ Core Features
 
 ## 🔑 Authentication System
 - Secure Registration & Login
-- Password hashing using **BCRYPT**
+- Password hashing (BCRYPT)
 - Session-based authentication
 - Session ID regeneration
 - Logout functionality
@@ -87,7 +88,7 @@ Built with **PHP (PDO)** and **MySQL**, the system focuses on security, performa
 
 ✔ Passwords hashed using `password_hash()`  
 ✔ PDO Prepared Statements (SQL Injection Protection)  
-✔ XSS protection using `htmlspecialchars()`  
+✔ XSS protection with `htmlspecialchars()`  
 ✔ Secure session handling  
 ✔ Delete confirmation prompts  
 ✔ Foreign Key constraints for data integrity  
@@ -95,112 +96,3 @@ Built with **PHP (PDO)** and **MySQL**, the system focuses on security, performa
 ---
 
 # 🗂️ Project Structure
-
-```
-UMUHUZA/
-│
-├── config/
-│   └── database.php
-│
-├── screenshots/
-│   ├── login.png
-│   ├── dashboard.png
-│   ├── members.png
-│   ├── products.png
-│   ├── sales.png
-│   ├── Recent.png
-│   └── Edit.png
-│
-├── includes/
-│   ├── header.php
-│   ├── footer.php
-│   └── auth.php
-│
-├── members.php
-├── products.php
-├── sales.php
-├── clients.php
-├── reports.php
-├── dashboard.php
-├── login.php
-├── register.php
-├── logout.php
-│
-└── README.md
-```
-
----
-
-# ⚙️ Installation Guide
-
-## 1️⃣ Clone the repository
-
-```bash
-git clone https://github.com/your-username/umuhuza.git
-```
-
-## 2️⃣ Import Database
-
-- Create a database in phpMyAdmin
-- Import the provided `.sql` file
-
-## 3️⃣ Configure Database
-
-Edit:
-
-```
-config/database.php
-```
-
-Update with your database credentials:
-
-```php
-$host = "localhost";
-$db   = "umuhuza";
-$user = "root";
-$pass = "";
-```
-
-## 4️⃣ Run the Project
-
-Place the folder inside:
-
-```
-C:\xampp\htdocs\
-```
-
-Then open:
-
-```
-http://localhost/umuhuza
-```
-
----
-
-# 📌 Technologies Used
-
-- PHP 8.x  
-- MySQL  
-- HTML5  
-- CSS3  
-- Bootstrap  
-- JavaScript  
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-# 👨‍💻 Author
-
-Developed by **Emery**  
-📧 Feel free to contribute or fork this project.
-
----
-
-# ⭐ Support
-
-If you like this project, please ⭐ star the repository on GitHub.
