@@ -1,94 +1,98 @@
-# UMUHUZA COOPERATIVE — Web Application
-## Installation & Setup Guide
+# 🚀 UMUHUZA COOPERATIVE  
+### Modern Cooperative Management Web Application  
 
-### Requirements
-- PHP 7.4+ (8.x recommended)
-- MySQL 5.7+ or MariaDB 10.4+
-- Apache/Nginx with mod_rewrite
-- XAMPP / WAMP / LAMP recommended for local development
-
----
-
-### Step 1: Database Setup
-1. Open **phpMyAdmin** or MySQL CLI
-2. Import the file **`database.sql`**
-   - This creates the database `umuhuza_cooperative` and all tables
-   - Sample data is included (optional)
+![PHP](https://img.shields.io/badge/PHP-8.x-blue)
+![MySQL](https://img.shields.io/badge/MySQL-5.7+-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
 
 ---
 
-### Step 2: Configure Database Connection
-Open **`config.php`** and update:
-```php
-define('DB_HOST', 'localhost');   // Your MySQL host
-define('DB_USER', 'root');        // Your MySQL username
-define('DB_PASS', '');            // Your MySQL password
-define('DB_NAME', 'umuhuza_cooperative');
-```
+## 📌 Overview
+
+**UMUHUZA Cooperative** is a modern web-based management system designed to help cooperatives efficiently manage:
+
+- 👥 Members  
+- 📦 Products  
+- 🧾 Sales  
+- 👤 Clients  
+- 📊 Reports  
+
+Built with **PHP (PDO)** and **MySQL**, it focuses on security, performance, and user-friendly design.
 
 ---
 
-### Step 3: Deploy Files
-Copy all files to your web server root (e.g., `htdocs/umuhuza/` for XAMPP)
+# 🖼️ Application Screenshots
 
-**File Structure:**
-```
-umuhuza/
-├── assets/
-│   └── css/
-│       └── style.css
-├── includes/
-│   ├── header.php
-│   └── footer.php
-├── config.php
-├── auth_check.php
-├── index.php
-├── login.php
-├── register.php
-├── logout.php
-├── dashboard.php
-├── members.php
-├── products.php
-├── clients.php
-├── sales.php
-├── reports.php
-└── database.sql
-```
+> 📸 Replace the image links below with your actual screenshots inside a `/screenshots` folder.
+
+## 🔐 Login Page
+![Login Screenshot](screenshots/login.png)
+##  Recent page
+![Login Screenshot](screenshots/Recent.png)
+##  Edit page
+![Login Screenshot](screenshots/Edit.png)
+
+
+## 📊 Dashboard
+![Dashboard Screenshot](screenshots/dashboard.png)
+
+## 👥 Members Management
+![Members Screenshot](screenshots/members.png)
+
+## 📦 Products Management
+![Products Screenshot](screenshots/products.png)
+
+## 🧾 Sales Module
+![Sales Screenshot](screenshots/sales.png)
 
 ---
 
-### Step 4: Create Admin Account
-1. Visit: `http://localhost/umuhuza/register.php`
-2. Fill in username, email, and password (min 6 characters)
-3. Click **Create Account**
-4. Login at `http://localhost/umuhuza/login.php`
+# ✨ Core Features
 
----
-
-### Features
-| # | Module | Feature |
-|---|--------|---------|
-| 1-6 | Authentication | Login, Register, Session, Logout, Password Hashing |
-| 7-13 | Database | PDO connection, all 5 tables with FK relations |
-| 14-18 | Members | Full CRUD + Search + Pagination |
-| 19-23 | Products | Full CRUD + Stock Status Indicators |
-| 24-27 | Clients | Full CRUD + Purchase History |
-| 28-33 | Sales | Full CRUD + Auto Total + Stock Deduction |
-| 34-36 | Reports | Sales, Stock, Member Contributions with date filters |
-| 37-40 | UI/UX | Sidebar nav, success/error alerts, glassmorphism CSS |
-
----
-
-### Security Features
-- Passwords hashed with `password_hash()` (BCRYPT)
-- PDO prepared statements (SQL injection prevention)
+## 🔑 Authentication System
+- Secure Registration & Login
+- Password hashing (BCRYPT)
 - Session-based authentication
-- Session ID regeneration on login
-- XSS prevention via `htmlspecialchars()`
-- Delete confirmations for destructive actions
+- Session ID regeneration
+- Logout functionality
+
+## 👥 Members Management
+- Full CRUD operations
+- Search & Pagination
+- Member contribution tracking
+
+## 📦 Products Management
+- Full CRUD
+- Real-time stock tracking
+- Stock status indicators
+
+## 👤 Clients Management
+- Full CRUD
+- Purchase history tracking
+
+## 🧾 Sales System
+- Create, update & delete sales
+- Automatic total calculation
+- Automatic stock deduction
+- Linked client & product records
+
+## 📊 Reports Module
+- Sales reports (date filter)
+- Stock reports
+- Member contributions report
 
 ---
 
-### Default Login (if using sample data)
-> Register a new account via `register.php` — it's the recommended approach.
-> The sample `admin` user in `database.sql` has password: `password` (standard PHP hash)
+# 🔐 Security Features
+
+✔ Passwords hashed using `password_hash()`  
+✔ PDO Prepared Statements (SQL Injection Protection)  
+✔ XSS protection with `htmlspecialchars()`  
+✔ Secure session handling  
+✔ Delete confirmation prompts  
+✔ Foreign Key constraints for data integrity  
+
+---
+
+# 🗂️ Project Structure
